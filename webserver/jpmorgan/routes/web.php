@@ -30,3 +30,5 @@ Route::get('/auth/facebook/redirect', 'AuthController@redirect');
 Route::get('/imagetest', 'ImageController@index');
 
 Route::get('/fbFindRelationships', 'FbController@findRelationshipId');
+
+Route::get('/video', 'FbController@postVideoToFacebook');
