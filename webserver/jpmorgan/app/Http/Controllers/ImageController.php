@@ -10,25 +10,13 @@ use Image;
 class ImageController extends Controller
 {
 
-/*	[
-	    {
-	        'image_path': 'C:\path\to\image_1.jpg',
-	        'image_caption': 'Caption #1'
-	    },
-	    {
-	        'image_path': 'C:\path\to\image_2.jpg',
-	        'image_caption': 'Caption #2'
-	    },
-	    {
-	        'image_path': 'C:\path\to\image_3.jpg',
-	        'image_caption': 'Caption #3'
-	    }
-	]*/
-
 	public function index() 
 	{
+
+		// get all image paths from img directory then push into array
+		$dirname = "img/test/";
+		$images = glob($dirname."*.jpg");
 		$output = [];
-		$images = ['img/test/br1.jpg', 'img/test/br1.jpg'];
 		foreach ($images as $img) {
 			$object = [
 				'image_path' => $img,
@@ -38,6 +26,7 @@ class ImageController extends Controller
 			array_push($output, $object);
 		}
 
+		// post to node server
 		$url = 'http://localhost:8088/generate_video';
 		$options = array(
 			'http' => array(
@@ -51,9 +40,6 @@ class ImageController extends Controller
 		$fp = fopen($url, false,$context);
 
 
-
-	}
-	public function sendLink () {
 
 	}
 }
