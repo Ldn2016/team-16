@@ -19,8 +19,14 @@ Route::get('/fblogin', function () {
 	return view('fblogin');
 });
 
+Route::get('/landing', function () {
+	return view('landing');
+});
+
 Route::get('/auth/facebook', 'AuthController@handle');
 
 Route::get('/auth/facebook/redirect', 'AuthController@redirect');
 
 Route::get('/imagetest', 'ImageController@index');
+
+Route::get('/fbFindRelationships', 'FbController@findRelationshipId');

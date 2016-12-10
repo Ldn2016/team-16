@@ -8,6 +8,8 @@ use Socialite;
 
 use App\User;
 
+use Auth;
+
 class AuthController extends Controller
 {
 	public function handle() 
@@ -24,6 +26,13 @@ class AuthController extends Controller
     	    'access_token' => $user->token,
     	]);
 
-    	return view('welcome')->with('user', $newUser);
+        Auth::login($newUser);
+
+    	return redirect('/landing');
+    }
+
+    public function redirectPath()
+    {
+        return property_exists($this, 'redirectTo') ? $this->redirectTo : '/home';
     }
 }
