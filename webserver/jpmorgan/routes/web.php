@@ -15,6 +15,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/fblogin', function () {
+	return view('fblogin');
+});
 
 Route::get('/auth/facebook', 'AuthController@handle');
 
