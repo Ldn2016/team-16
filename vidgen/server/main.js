@@ -15,8 +15,10 @@ var renderInProcess = false;
 // Config
 const AE_RENDERER_PATH      = "\"D:\\Program Files\\Adobe\\Adobe After Effects CS6\\Support Files\\aerender.exe\"";
 const AE_RENDERER_BASEPATH  = "D:\\Program Files\\Adobe\\Adobe After Effects CS6\\Support Files\\";
-const AE_TEMPLATE_PATH      = "D:\\Downloads\\drive-download-20161210T022057Z\\01_Project file\\Creative Montage converted.aep";
-const AE_TEMPLATE_BASEPATH  = "D:\\Downloads\\drive-download-20161210T022057Z\\01_Project file\\";
+//const AE_TEMPLATE_PATH      = "D:\\Downloads\\drive-download-20161210T022057Z\\01_Project file\\Creative Montage converted.aep";
+//const AE_TEMPLATE_BASEPATH  = "D:\\Downloads\\drive-download-20161210T022057Z\\01_Project file\\";
+const AE_TEMPLATE_PATH      = "D:\\Documents\\STRANGE_RENDERS\\Stranger Effects.aep";
+const AE_TEMPLATE_BASEPATH  = "D:\\Documents\\STRANGE_RENDERS\\";
 const WEB_ROOT              = "D:\\xampp\\htdocs\\"
 const MAX_NUM_IMAGES        = 15;
 var RENDER_SETTINGS         = "MP4_Settings";
