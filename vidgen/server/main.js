@@ -101,6 +101,12 @@ function generate_video() {
                 return console.log(err);
             }
         });
+        file = AE_TEMPLATE_BASEPATH + '/data/data' + (i+1) + '.js';
+        fs.writeFile(file, data, function (err) {
+            if (err) {
+                return console.log(err);
+            }
+        });
     }
     
     // Start rendering.
