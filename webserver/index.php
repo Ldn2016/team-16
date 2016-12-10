@@ -4,14 +4,9 @@
 	<title></title>
 </head>
 <body>
-	<script src="dev_auth.js"></script>
-	hello world!
+<script src="dev_auth.js"></script>
 
-	<div
-	  class="fb-like"
-	  data-share="true"
-	  data-width="450"
-	  data-show-faces="true">
-	</div>
+<div class="fb-login-button" data-max-rows="1" data-size="medium" data-show-faces="true" data-auto-logout-link="true"></div>
+
 </body>
 </html>
