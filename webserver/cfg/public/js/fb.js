@@ -64,7 +64,7 @@ function getPhotosWith(me, you) {
             }
           }
         }
-        count++;
+      count++;
       }
       
     });
