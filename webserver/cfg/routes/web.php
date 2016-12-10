@@ -22,3 +22,5 @@ Route::get('/fblogin', function () {
 Route::get('/auth/facebook', 'AuthController@handle');
 
 Route::get('/auth/facebook/redirect', 'AuthController@redirect');
+
+Route::get('/imagetest', 'ImageController@index');
